@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="VigilanceLangue" content="BI">
+        
+        <title>Template</title>
+        
+        <link rel="shortcut icon" href="rxvlibrairies/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="rxvlibrairies/img/favicon.ico" type="image/x-icon">
+        
+        <link rel="stylesheet" type="text/css" href="vendor/Bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" media="all" href="rxvlibrairies/css/rxvlib.css"/>
+        <link rel="stylesheet" type="text/css" media="all" href="rxvlibrairies/css/rxvlib-mobile.css"/>
+        <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" media="print" href="css/style-print.css"/>
+        
+        <!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" media="all" href="css/style-ie8.css"/>
+        <link rel="stylesheet" type="text/css" media="print" href="css/style-print-ie8.css"/>
+        <script type="text/javascript" src="./rxvlibrairies/vendor/respond.min.js"></script>
+        <![endif]-->
+    </head>
+	<body>
+        
+        <div class="overlay">
+        </div>
+
+        <div id="header">
+            <div class="container">
+	            <div class="row">
+	                <div class="col-md-12">
+	                    <div id="app-branding-container"></div>
+	                    <div id="navbar">
+	                        <ul>
+	                        </ul>
+	                    </div>
+	                </div>
+	            </div>
+            </div>
+        </div>
+
+        <div id="main-container">
+
+        </div><!-- fin de #main-container -->
+
+        <div id="error-container"></div>
+        
+        <div id="footer">
+            <span id="version_number" class="trigger-popup">&copy;&nbsp;<span data-dictionnaire_html="txt_copyright"></span> &nbsp; <span id="data_version">2017-10</span></span>
+        </div>
+		
+		<div id="debug_intrant"></div>
+
+        <div id="rxvigilance_hidden" style="display: none">
+            Ce texte ne devrait pas être visible !
+            <div id="rxvigilance_input"></div>
+            <div id="rxvigilance_gk"></div>
+            <div id="rxvigilance_output"></div>
+            <div id="rxvigilance_print"></div>
+            <div id="rxvigilance_interne"></div>
+            <div id="rxvigilance_initialisation"></div>
+        </div>
+        <div id="print"></div>
+	</body>
+    
+    <script data-main="<%= mainConfigPath %>" type="text/javascript" src="vendor/require.js"></script>
+</html>
